@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = '1.0.2' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pkgbuild_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pkgbuild/pkgbuild_{{ version }}.tar.gz
-  sha256: a9691dd3e27cd053a5d4cc8df8b46baa9915c95d4ce03b8e4cb4c77a0a403f82
+  sha256: 1a3e2a321742aab8dbda150f952c61b2a04e41618e9517e95d229f7ebaca39c4
 
 build:
   merge_build_host: True  # [win]
@@ -30,8 +30,10 @@ requirements:
     - r-base
     - r-r6
     - r-callr >=2.0.0
+    - r-cli
     - r-crayon
     - r-desc
+    - r-prettyunits
     - r-rprojroot
     - r-withr >=2.1.2
 
@@ -39,8 +41,10 @@ requirements:
     - r-base
     - r-r6
     - r-callr >=2.0.0
+    - r-cli
     - r-crayon
     - r-desc
+    - r-prettyunits
     - r-rprojroot
     - r-withr >=2.1.2
 
@@ -50,7 +54,7 @@ test:
     - "\"%R%\" -e \"library('pkgbuild')\""  # [win]
 
 about:
-  home: https://github.com/r-pkgs/pkgbuild
+  home: https://github.com/r-lib/pkgbuild
   license: GPL-3
   summary: Provides functions used to build R packages. Locates compilers needed to build R packages
     on various platforms and ensures the PATH is configured appropriately so R can use
