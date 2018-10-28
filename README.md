@@ -1,7 +1,7 @@
 About r-pkgbuild
 ================
 
-Home: https://github.com/r-pkgs/pkgbuild
+Home: https://github.com/r-lib/pkgbuild
 
 Package license: GPL-3
 
