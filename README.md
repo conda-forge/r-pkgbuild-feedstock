@@ -5,11 +5,9 @@ Home: https://github.com/r-lib/pkgbuild
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pkgbuild-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides functions used to build R packages. Locates compilers needed to build R packages on various platforms and ensures the PATH is configured appropriately so R can use them.
-
-
 
 Current build status
 ====================
